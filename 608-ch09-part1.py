@@ -9,8 +9,14 @@
 import csv
 from functools import total_ordering
 import urllib
+import numpy as np
+
 import pandas as pd
 from pandas.core.frame import DataFrame
+<<<<<<< HEAD
+=======
+import matplotlib
+>>>>>>> 37fe50bb1b1267fda880c2f323319faae2e74113
 
 '''/
 with open('accounts.csv', mode='w', newline='') as accounts:
@@ -76,3 +82,5 @@ for i in range(total):
     print(f'{titanicFiltered.Name[i]:<40}{titanicFiltered.Survived[i]:10}{titanicFiltered.Sex[i]:<10}{titanicFiltered.Age[i]:<10}{titanicFiltered.Class[i]:10}')
 
 print(titanicFiltered.describe())
+
+print(titanicFiltered.hist())
