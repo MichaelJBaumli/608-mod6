@@ -11,6 +11,7 @@ from functools import total_ordering
 import urllib
 import pandas as pd
 from pandas.core.frame import DataFrame
+
 '''/
 with open('accounts.csv', mode='w', newline='') as accounts:
     writer = csv.writer(accounts)
